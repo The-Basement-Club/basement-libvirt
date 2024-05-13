@@ -1,0 +1,44 @@
+{
+    "name": "the-basement/libvirt",
+    "type": "library",
+    "description": "This package implements the domain service contract for the libvirt hypervisor.",
+    "keywords": [
+        "thebasement.club",
+        "libvirt",
+        "hypervisor",
+        "kvm",
+        "qemu",
+        "virtualization"
+    ],
+    "homepage": "https://github.com/The-Basement-Club/basement-libvirt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Austin Kregel",
+            "email": "5355937+austinkregel@users.noreply.github.com",
+            "homepage": "https://austinkregel.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "the-basement/common": "^0.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheBasement\\Libvirt\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheBasement\\Libvirt\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15",
+        "phpunit/phpunit": "^11.1"
+    }
+}
